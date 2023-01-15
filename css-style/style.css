@@ -154,9 +154,11 @@
 }
 .big-btn{
     display: inline-block;
+    width: 340px;
     text-align: center;
-    margin-left: 650px;
-    margin-top: -300px;
+    position: relative;
+    bottom: 120px;
+    left: 43%;
 }
 .big-btn h1{
     font-weight: 700;
@@ -165,7 +167,55 @@
 .big-btn p{
     font-size: 25px;
 }
-/* Mobile Screen Media query */
+/* Bottom Section Style */
+.top-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+.top-pera{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.mini-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mini-div{
+    margin: 100px 0 180px;
+    text-align: center;
+    height: 240px;
+    width: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 50px;
+}
+.mini-div-2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 100%;
+}
+/* Footer Styles */
+.foot{
+    padding: 40px 0;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin: 130px auto;
+}
+
+
+/********************************
+ Mobile Screen Media query 
+ ********************************/
 @media only screen and (max-width: 576px) {
     /* Header Styles */
     .navigation-bar{
@@ -214,5 +264,39 @@
     .right-side{
         padding: 10px 0;
         width: 100%;
+    }
+    .big-btn{
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .big-btn h1{
+        font-size: 2rem;
+    }
+    /* bottom Section Style */
+    .top-section{
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .mini-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 30px 0;
+    }
+    .logo-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .mini-div{
+        margin: 0;
+    }
+    .foot{
+        margin: 50px 0;
     }
 }
